@@ -31,7 +31,8 @@ var getWeatherData = function() {
                     var windCurrent = data.daily[0].wind_speed+" m/s";
                     var humidityCurrent = data.daily[0].humidity+"%";
                     var uvCurrent = data.daily[0].uvi;
-                    var mainCurrent = data.daily[0].weather[0].main
+                    var mainCurrent = data.daily[0].weather[0].main;
+                    $("#border").addClass("border border-success rounded");
                     console.log (mainCurrent);
                     $("#todayTemp").text("Temp: "+tempCurrent);
                     $("#todayWind").text("Wind: "+windCurrent);
@@ -118,7 +119,7 @@ var getWeatherData = function() {
                     humidityFuture = data.daily[i].humidity+"%";
                     mainFuture = data.daily[i].weather[0].main;
                     $("#forcast").text("5 Day Forcast");
-                    $("#card-deck").append('<div class="card bg-primary" id="newId'+[i]+'"><div class="card-body text-left"><div class="card-text"><h5><strong>'+dayFuture+'</strong></h5><p id="icon'+[i]+'"></p><p>Temp: '+tempFuture+'</p><p>Humidity: '+humidityFuture+'</p><p>Wind: '+windFuture+'</p></div></div></div>');
+                    $("#card-deck").append('<div class="card bg-primary" id="newId'+[i]+'"><div class="card-body text-left"><div class="card-text"><h5><strong>'+dayFuture+'</strong></h5><h3 id="icon'+[i]+'"></h3><p>Temp: '+tempFuture+'</p><p>Humidity: '+humidityFuture+'</p><p>Wind: '+windFuture+'</p></div></div></div>');
                     console.log(dayFuture, tempFuture, windFuture, humidityFuture,mainFuture)
                     if (mainFuture ==="Clouds"){
                       $("#icon"+[i]).addClass("fas fa-cloud")
