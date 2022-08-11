@@ -25,7 +25,7 @@ THEN I am again presented with current and future conditions for that city
 - JavaScript
 
 ## Website
-https://cvanbreda91.github.io/awesome-code-quiz
+https://cvanbreda91.github.io/rubber-boots/
 
 ## Contribution
 Made with ❤️ by Courtney
