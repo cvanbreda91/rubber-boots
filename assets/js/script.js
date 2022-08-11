@@ -221,3 +221,18 @@ $(document).on('click', '#button3', function() {
   city = JSON.parse(localStorage.getItem('city3'));
   getWeatherData()
 });
+
+$(document).on('click', '#button4', function() {
+  city = JSON.parse(localStorage.getItem('city1'));
+  getWeatherData()
+});
+
+$(document).on('click', '#button5', function() {
+  city = JSON.parse(localStorage.getItem('city2'));
+  getWeatherData()
+});
+
+$(document).on('click', '#button6', function() {
+  city = JSON.parse(localStorage.getItem('city3'));
+  getWeatherData()
+});
