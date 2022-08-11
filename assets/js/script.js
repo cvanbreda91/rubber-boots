@@ -35,10 +35,10 @@ var getWeatherData = function() {
                     $("#todayTemp").text("Temp: "+tempCurrent);
                     $("#todayWind").text("Wind: "+windCurrent);
                     $("#todayHumidity").text("Humidity: "+humidityCurrent);
+                    $("#todayCity").text(city)
                     // $("#todayIndex").text("UV Index: "+uvCurrent);
                     if (mainCurrent == "Clouds") {
-                      $("#todayCity")
-                        .text(city)
+                      $("#weatherIcon")
                         .removeClass("fas fa-bolt")
                         .removeClass("fas fa-cloud-rain")
                         .removeClass("fas fa-cloud-showers-heavy")
@@ -47,8 +47,7 @@ var getWeatherData = function() {
                         .addClass("fas fa-cloud");
                     }
                     if (mainCurrent == "Thunderstorm") {
-                      $("#todayCity")
-                        .text(city)
+                      $("#weatherIcon")
                         .removeClass("fas fa-cloud")
                         .removeClass("fas fa-cloud-rain")
                         .removeClass("fas fa-cloud-showers-heavy")
@@ -57,8 +56,7 @@ var getWeatherData = function() {
                         .addClass("fas fa-bolt");
                     }
                     if (mainCurrent == "Drizzle") {
-                      $("#todayCity")
-                        .text(city)
+                      $("#weatherIcon")
                         .removeClass("fas fa-bolt")
                         .removeClass("fas fa-cloud")
                         .removeClass("fas fa-cloud-showers-heavy")
@@ -67,8 +65,7 @@ var getWeatherData = function() {
                         .addClass("fas fa-cloud-rain");
                     }
                     if (mainCurrent == "Rain") {
-                      $("#todayCity")
-                        .text(city)
+                      $("#weatherIcon")
                         .removeClass("fas fa-bolt")
                         .removeClass("fas fa-cloud-rain")
                         .removeClass("fas fa-cloud")
@@ -77,8 +74,7 @@ var getWeatherData = function() {
                         .addClass("fas fa-cloud-showers-heavy");
                     }
                     if (mainCurrent == "Snow") {
-                      $("#todayCity")
-                        .text(city)
+                      $("#weatherIcon")
                         .removeClass("fas fa-bolt")
                         .removeClass("fas fa-cloud-rain")
                         .removeClass("fas fa-cloud-showers-heavy")
@@ -87,8 +83,7 @@ var getWeatherData = function() {
                         .addClass("far fa-snowflake");
                     }
                     if (mainCurrent == "Clear") {
-                      $("#todayCity")
-                        .text(city)
+                      $("#weatherIcon")
                         .removeClass("fas fa-bolt")
                         .removeClass("fas fa-cloud-rain")
                         .removeClass("fas fa-cloud-showers-heavy")
