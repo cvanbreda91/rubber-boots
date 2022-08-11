@@ -1,0 +1,29 @@
+.jumbotron {
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#search, #todayCity, #forcast {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.btn {
+   background-color: #2BFF88; 
+   color:black;  
+}
+
+.btn:hover {
+    background-color: #FA8BFF; 
+    color:black;  
+ }
+#button {
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    color: white;  
+}
+
+#button:hover {
+    background-image: linear-gradient(45deg, #2BFF88  0%, #2BD2FF 52%, #FA8BFF 90%);
+    color: white;
+    font-weight: bold;  
+}
