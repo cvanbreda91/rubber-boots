@@ -41,3 +41,4 @@ Made with ❤️ by Courtney
 - get items from localStorage
 
 ## Website Snapshot
+![website-image](https://github.com/cvanbreda91/rubber-boots/blob/main/assets/images/website.mp4?raw=true)
