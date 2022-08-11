@@ -7,6 +7,7 @@ var tempFuture = "";
 var windFuture = "";
 var humidityFuture = "";
 var mainFuture = "";
+var cityHistoric = "";
 
 var getWeatherData = function() {
     // format the api url
@@ -201,22 +202,22 @@ $("#button").click(function(event) {
     getWeatherData();
 
 //create buttons based on past searches to make re-searching same location easier
-    $("#button").clone()
-                .appendTo("#cityId")
-                .attr("id","newButton"+key)
-                .text(JSON.parse(localStorage.getItem('city'+key)))
+    $("#cityId").append('<button class="btn btn-info btn-block" id="button'+key+'">'+city+'</button>')
     
 })
 
-function getLocalStorage(){
-    for (var i=1; i<=localStorage.length; i++){
-        $("#button").clone()
-            .appendTo("#cityId")
-            .attr("id","newButton"+key)
-            .removeClass("btn-primary")
-            .addClass("btn-info")
-            .text(JSON.parse(localStorage.getItem('city'+[i])))
-    }
-};
-getLocalStorage();
 
+$(document).on('click', '#button1', function() {
+  city = JSON.parse(localStorage.getItem('city1'));
+  getWeatherData()
+});
+
+$(document).on('click', '#button2', function() {
+  city = JSON.parse(localStorage.getItem('city2'));
+  getWeatherData()
+});
+
+$(document).on('click', '#button3', function() {
+  city = JSON.parse(localStorage.getItem('city3'));
+  getWeatherData()
+});
